@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Yu-Gi-Oh! Trading Card Game Website</title>
+    <link rel="stylesheet" href="home.css">
+    <script>
+        function facebook() 
+        {
+            window.open("https://www.facebook.com/profile.php?id=100086509432456")
+        }
+        function gmail()
+        {
+            window.open("https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDXmjmTgKZxzzgLLhgrMXkhHdDXbrKnVsgSXXNXxpdVvjLZdNXkXFxFjThLzNKvJRmNlnnM")
+        }
+    </script>
+</head>
+<body>
+    <div id="page" class="bg-gray-900">
+        <div id="header" class="flex bg-black">
+            <div id="logo" class="flex items-center justify-center">
+                <a href="homepage-en.html">
+                    <img src="image\LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div id="menu" class="flex items-center justify-between">
+                <a href="#" id="rule" class="text-2xl text-white hover:text-gray-500">
+                    How To Play
+                </a>
+                <a href="tactics-en.html" id="tactics" class="text-2xl text-white hover:text-gray-500">
+                    Tactics
+                </a>
+                <a href="#" id="search" class="text-2xl text-white hover:text-gray-500">
+                    Search
+                </a>
+            </div>
+            <div id="register-login" class="flex items-center justify-center">
+                <a href="home-en.html" id="login" class="text-xl text-gray-600 hover:text-white">
+                    Log Out
+                </a>
+            </div>
+            <div id="language" class="flex items-center justify-center">
+                <form class="flex items-center justify-center"  onchange="window.location.href='homepage-vn.html'">
+                    <select id="language-switch" name="language" class="bg-black text-white">
+                        <option>EN</option>
+                        <option>VN</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="content" class="flex items-center justify-center">
+            <p id="introduction" class="text-gray-500">
+                Welcome to our Yugioh website! This is the perfect place to explore and learn everything about the world of Yugioh – from basic gameplay to advanced strategies. With detailed guides, you'll quickly grasp the rules, how to build your deck, and how to optimize your tactics in duels. Additionally, our website offers a search tool to easily find detailed information about each card, helping you better understand and enjoy your favorite cards. Whether you're a beginner or a seasoned player, this site will be your ideal tool on your Yugioh journey!
+            </p>
+        </div>
+        <div id="contact" class="flex bottom-0 bg-black">
+            <div id="blank"></div>
+            <div id="information" class="flex">
+                <div id="information1" class="flex items-center justify-center">
+                    <h1 class="text-2xl text-white">
+                        CONTACT
+                    </h1>
+                </div>
+                <div id="information2" class="flex flex-col justify-between">
+                    <a onclick="facebook()" class="text-white mt-8 block hover:cursor-pointer">
+                        Facebook: Mai Lương Bắc
+                    </a>
+                    <a onclick="gmail()" class="text-white mb-8 block hover:cursor-pointer">
+                        Gmail: serty1023@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div id="blank"></div>
+        </div>
+    </div>
+</body>
+</html>

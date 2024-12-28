@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tactics</title>
+    <link rel="stylesheet" href="tactics.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b9604df615.js" crossorigin="anonymous"></script>
+    <script>
+        function facebook() 
+        {
+            window.open("https://www.facebook.com/profile.php?id=100086509432456")
+        }
+        function gmail()
+        {
+            window.open("https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDXmjmTgKZxzzgLLhgrMXkhHdDXbrKnVsgSXXNXxpdVvjLZdNXkXFxFjThLzNKvJRmNlnnM")
+        }
+    </script>
+</head>
+<body>
+    <div id="page" class="flex flex-col items-center bg-gray-900">
+        <div id="header" class="flex bg-black">
+            <div id="logo" class="flex items-center justify-center">
+                <a href="homepage-en.html">
+                    <img src="image\LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div id="menu" class="flex items-center justify-between">
+                <a href="register-tutorial-en.html" id="rule" class="text-2xl text-white hover:text-gray-500">
+                    How To Play
+                </a>
+                <a href="tactics-en.html" id="tactics" class="text-2xl text-white hover:text-gray-500">
+                    Tactics
+                </a>
+                <a href="#" id="search" class="text-2xl text-white hover:text-gray-500">
+                    Search
+                </a>
+            </div>
+            <div id="register-login" class="flex items-center justify-center">
+                <a href="home-en.html" id="login" class="text-xl text-gray-600 hover:text-white">
+                    Log Out
+                </a>
+            </div>
+            <div id="language" class="flex items-center justify-center">
+                <form class="flex items-center justify-center"  onchange="window.location.href='homepage-vn.html'">
+                    <select id="language-switch" name="language" class="bg-black text-white">
+                        <option>EN</option>
+                        <option>VN</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="alternative-menu" class="flex items-center justify-around">
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="unregister-tutorial-en.html" class="text-2xl text-white hover:text-gray-500 p-2">
+                    How To Play
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Tactics
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Search
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>            
+        </div>
+        <div class="h-48"></div>
+        <div id="control-page" class="flex">
+            <a id="control" href="">
+                <i class="fa-solid fa-angles-left"></i>
+            </a>
+            <a id="control" href="">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div id="page-number">
+                <a href="" style="color: rgb(253 224 71);">
+                    1
+                </a>
+                <a href="">
+                    2
+                </a>
+                <a href="">
+                    3
+                </a>
+                <a href="">
+                    4
+                </a>
+                <a id="full-page" onmouseover="showpagenumbers1()" onmouseout="hidepagenumbers1()">
+                    ...
+                </a>
+                <a href="">
+                    20
+                </a>
+            </div>
+            <a id="control" href="">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a id="control" href="">
+                <i class="fa-solid fa-angles-right"></i>
+            </a>
+        </div>
+        <div id="page-number-content-1" onmouseover="showpagenumbers1()" onmouseout="hidepagenumbers1()">
+            <p style="color: rgb(253 224 71);">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+        </div>
+        <div class="h-4"></div>
+        <div id="tactics_list">
+            <div id="tactic" onclick="location.href='tenpai-dragon-guide.html'">
+                <img src="image/Tenpai Dragon Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Tenpai Dragon Guide
+                    </h1>
+                    <p>
+                        Dragon Monsters that can Synchro Summon during Battle Phase?!
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Spright Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Spright Guide
+                    </h1>
+                    <p>
+                        "2" is just a number, destroy your opponent with Level/Rank/Link 2 monsters.
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Code Talker Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Code Talker Guide
+                    </h1>
+                    <p>
+                        Link Summon using monsters from hand?! That was crazy!
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Yubel Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Yubel Guide
+                    </h1>
+                    <p>
+                        Don't compare ATK for declaring an attack, she can make you take that damage.
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Kashtira Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Kashtira Guide
+                    </h1>
+                    <p>
+                        Limit opponent's zones, banish the top cards from their decks and more interuptions.
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Shining Sarcophagus Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Shining Sarcophagus Guide
+                    </h1>
+                    <p>
+                        Old monsters with new power. Yugi's iconic monsters are coming back!
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Snake-eyes Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Snake-eyes Guide
+                    </h1>
+                    <p>
+                        Special Summon monsters from Spell/Trap Zones, also can place your opponent's monsters in Spell/Trap Zones.
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Red-eyes Dark Dragoon.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Red-eyes Dark Dragoon Guide
+                    </h1>
+                    <p>
+                        Destroy up to 2 monsters and inflict damage to opponent equal to those monster ATK, omni-negate. That too lot for 1 monster.
+                    </p>
+                </div>
+            </div>
+            <div id="tactic">
+                <img src="image/Swordsoul Guide.png" alt="tactics">
+                <div id="guide-background">
+                </div>
+                <div id="guide">
+                    <h1>
+                        Swordsoul Guide
+                    </h1>
+                    <p>
+                        Easy to combo, bring a powerful monsters.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="h-24"></div>
+        <div id="page-number-content-2" onmouseover="showpagenumbers2()" onmouseout="hidepagenumbers2()">
+            <p style="color: rgb(253 224 71);">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+            <p>14</p>
+            <p>15</p>
+            <p>16</p>
+            <p>17</p>
+            <p>18</p>
+            <p>19</p>
+            <p>20</p>
+        </div>
+        <div id="control-page" class="flex">
+            <a id="control" href="">
+                <i class="fa-solid fa-angles-left"></i>
+            </a>
+            <a id="control" href="">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+            <div id="page-number">
+                <a href="" style="color: rgb(253 224 71);">
+                    1
+                </a>
+                <a href="">
+                    2
+                </a>
+                <a href="">
+                    3
+                </a>
+                <a href="">
+                    4
+                </a>
+                <a id="full-page" onmouseover="showpagenumbers2()" onmouseout="hidepagenumbers2()">
+                    ...
+                </a>
+                <a href="">
+                    20
+                </a>
+            </div>
+            <a id="control" href="tactics-en-2.html">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a id="control" href="">
+                <i class="fa-solid fa-angles-right"></i>
+            </a>
+        </div>
+        <div id="contact" class="flex bg-black">
+            <div id="blank"></div>
+            <div id="information" class="flex">
+                <div id="information1" class="flex items-center justify-center">
+                    <h1 class="text-2xl text-white">
+                        CONTACT
+                    </h1>
+                </div>
+                <div id="information2" class="flex flex-col justify-between">
+                    <a onclick="facebook()" class="text-white mt-8 block hover:cursor-pointer">
+                        Facebook: Mai Lương Bắc
+                    </a>
+                    <a onclick="gmail()" class="text-white mb-8 block hover:cursor-pointer">
+                        Gmail: serty1023@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <script>
+        function showpagenumbers2()
+        {
+            document.getElementById("page-number-content-2").style.scale = "1";
+        }
+        function hidepagenumbers2()
+        {
+            document.getElementById("page-number-content-2").style.scale = "0";
+        }
+        function showpagenumbers1()
+        {
+            document.getElementById("page-number-content-1").style.scale = "1";
+        }
+        function hidepagenumbers1()
+        {
+            document.getElementById("page-number-content-1").style.scale = "0";
+        }
+    </script>
+</body>
+</html>

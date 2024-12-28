@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create an Account</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://kit.fontawesome.com/b9604df615.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="login-form.css">
+</head>
+<body>
+	<div id="login-page" class="bg-gray-900">
+		<form class="absolute top-10 right-10"  onchange="window.location.href='register-form-vn.html'">
+            <select id="language-switch" name="language" class="bg-gray-900 text-white">
+                <option>EN</option>
+                <option>VN</option>
+            </select>
+        </form>
+		<div id="form">
+			<form id="login-form" class="flex rounded-xl bg-gray-800" action="login-form-en.html" method="post">
+				<div id="avatar">
+					<img id="login-avatar" src="image\LOGO.png" alt="Unloaded Image" class="mt-12 mb-12 hover:cursor-pointer" onclick="window.location.href='home-en.html'">
+				</div>
+				<div id="user-data">
+					<label for="username" class="text-white font-bold p-3">
+						USERNAME
+					</label>
+					<input type="text" name="username" placeholder="Enter Username" class="p-2" required>
+					<label for="password" class="text-white font-bold p-3">
+						PASSWORD
+					</label>
+					<input type="password" name="password" placeholder="Enter Password" class="p-2" required>
+					<label for="password" class="text-white font-bold p-3">
+						CONFIRM PASSWORD
+					</label>
+					<input type="password" name="password" placeholder="Confirm Password" class="p-2" required>
+					<button type="submit" class="text-xl text-white font-bold border-white border-2 rounded-xl mt-12 mb-8 p-3 hover:text-black hover:bg-white">
+						CREATE ACCOUNT
+					</button>
+				</div>
+				<div id="non-account" class="mb-12"> 
+					<a href="login-form-en.html" class="text-xl font-bold text-white hover:text-yellow-300">
+						Already have an account?
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

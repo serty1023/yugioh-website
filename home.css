@@ -1,0 +1,193 @@
+#page
+{    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+    #header
+    {
+        height: 75px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+        #logo
+        {
+            height: 75px;
+            width: 23%;
+        }
+        #menu
+        {
+            height: 75px;
+            width: 46%;
+        }
+            #rule::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transform-origin: left;
+                transition: all ease 1s;
+            }
+            #rule:hover::after
+            {
+                transform: scale(1,1);
+            }
+            #tactics::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transition: all ease 0.3s;
+            }
+            #tactics:hover::after
+            {
+                transform: scale(1,1);
+            }
+            #search::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transform-origin: right;
+                transition: all ease 0.3s;
+            }
+            #search:hover::after
+            {
+                transform: scale(1,1);
+            }
+        #register-login
+        {
+            height: 75px;
+            width: 23%;
+        }
+            #login::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: white;
+                left: 0;
+                transform: scale(0,0);
+                transition: all ease 0.3s;
+            }
+            #login:hover::after
+            {
+                transform: scale(1,1);
+            }  
+        #language
+        {
+            height: 75px;
+            width: 8%;
+        }
+            #introduction
+            {
+                font-size: 22.5px;
+                max-width: 55%;
+                text-align: center;
+                line-height: 1.8;
+            }
+    #alternative-menu
+    {
+        position: fixed;
+        top: 80px;
+        width: 100%;
+    }
+    #contact
+    {
+        height: 125px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+        #blank
+        {
+            width: 33%;
+        }
+        #information
+        {
+            width: 34%;
+        }
+            #information1
+            {
+                width: 33%;
+                height: 125px;
+            }
+            #information2
+            {
+                width: 67%;
+                height: 125px;
+            }
+@media (min-width: 300px) and (max-width: 1000px)
+{    
+    #header
+    {
+        justify-content: space-between;
+        #logo
+        {
+            margin-left: 2%;
+            width: 23%;
+        }
+        #register-login
+        {
+            width: 50%;
+        }
+        #language
+        {
+            width: 25%;
+        }
+        #menu
+        {
+            display: none;
+        }
+    }
+    #introduction
+    {
+        font-size: 18px;
+    }
+    #blank
+    {
+        display: none;
+    }
+    #information
+    {
+        width: 100%;
+    }
+}
+@media (min-width:1000px) and (max-width:1500px)
+{
+    #alternative-menu
+    {
+        display: none;
+    }
+    #introduction
+    {
+        max-width: 60%;
+        font-size: 22.5px;
+    }
+}
+@media  (min-width:1500px)
+{
+    #alternative-menu
+    {
+        display: none;
+    }
+}

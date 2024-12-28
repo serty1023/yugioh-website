@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Play Yu-gi-oh</title>
+    <link rel="stylesheet" href="tutorial.css">
+    <script>
+        function facebook() 
+        {
+            window.open("https://www.facebook.com/profile.php?id=100086509432456")
+        }
+        function gmail()
+        {
+            window.open("https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDXmjmTgKZxzzgLLhgrMXkhHdDXbrKnVsgSXXNXxpdVvjLZdNXkXFxFjThLzNKvJRmNlnnM")
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="page" class="flex bg-gray-900">
+        <div id="header" class="flex bg-black">
+            <div id="logo" class="flex items-center justify-center">
+                <a href="homepage-en.html">
+                    <img src="image\LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div id="menu" class="flex items-center justify-between">
+                <a href="unregister-tutorial-en.html" id="rule" class="text-2xl text-white hover:text-gray-500">
+                    How To Play
+                </a>
+                <a href="tactics-en.html" id="tactics" class="text-2xl text-white hover:text-gray-500">
+                    Tactics
+                </a>
+                <a href="#" id="search" class="text-2xl text-white hover:text-gray-500">
+                    Search
+                </a>
+            </div>
+            <div id="register-login" class="flex items-center justify-center">
+                <a href="login-form-en.html" id="login" class="text-xl text-gray-600 hover:text-white">
+                    Login
+                </a>
+            </div>
+            <div id="language" class="flex items-center justify-center">
+                <form class="flex items-center justify-center"  onchange="window.location.href='homepage-vn.html'">
+                    <select id="language-switch" name="language" class="bg-black text-white">
+                        <option>EN</option>
+                        <option>VN</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="title">
+            <span id="open" onclick="opennavigationmenu();indentation();" class="bg-gray-700">
+                &#9776
+                Navigation Menu
+            </span>
+            <span id="close" onclick="closenavigationmenu();deleteindentation();" class="bg-gray-700">
+                &#9776
+                Navigation Menu
+            </span>
+        </div>
+        <div id="alternative-menu" class="flex items-center justify-around">
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="unregister-tutorial-en.html" class="text-2xl text-white hover:text-gray-500 p-2">
+                    How To Play
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Tactics
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Search
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>            
+        </div>          
+        <div id="navigation-menu" class="bg-gray-700">
+            <div id="basic-rule" class="border-gray-800 border-2 mb-1">
+                <a href="#tutorials" onclick="skipclose()">
+                    <h1 class="text-xl text-white p-3">
+                        Basic Rule
+                    </h1>
+                </a>
+                <div id="basic-rule-menu">
+                    <a href="#playmat-content" onclick="skipclose()">
+                        <p>
+                            Playmat
+                        </p>
+                    </a>
+                    <a href="#deck-content" onclick="skipclose()">
+                        <p>
+                            Decks
+                        </p>
+                    </a>
+                    <a href="#gameplay-link" onclick="skipclose()">
+                        <p>
+                            Gameplay
+                        </p>
+                    </a>
+                </div>
+                <div id="gameplay-menu">
+                    <a href="#phase-content" onclick="skipclose()">
+                        <p>
+                            Phases In A Turn
+                        </p>
+                    </a>
+                    <a href="#summon-content" onclick="skipclose()">
+                        <p>
+                            Summon Monster
+                        </p>
+                    </a>                    
+                    <a href="#win-content" onclick="skipclose()">
+                        <p>
+                            Winning Conditions
+                        </p>
+                    </a>
+                    <a href="#battle" onclick="skipclose()">
+                        <p>
+                            Battling Mechanism
+                        </p>
+                    </a>    
+                </div>
+            </div>
+            <div class="border-gray-800 border-2 mb-1">
+                <a href="#cardunderstand-content" onclick="skipclose()">
+                    <p id="cardunderstand" class="text-xl text-white p-3">
+                        Understand The Card
+                    </p>
+                </a>
+                <div id="cardunderstand-menu">
+                    <a href="#monster_card" onclick="skipclose()">
+                        <h1 class="text-lg text-gray-400 p-3 pl-10">
+                            Monster Card
+                        </h1>
+                    </a>
+                    
+                    <div id="card">
+                        <a href="#normal_monster" onclick="skipclose()">
+                            <p>
+                                Normal Monster
+                            </p>
+                        </a>
+                        <a href="#effect_monster" onclick="skipclose()">
+                            <p>
+                                Effect Monster
+                            </p>
+                        </a>
+                        <a href="#ritual_monster" onclick="skipclose()">
+                            <p>
+                                Ritual Monster
+                            </p>
+                        </a>
+                        <a href="#fusion_monster" onclick="skipclose()">
+                            <p>
+                                Fusion Monster
+                            </p>    
+                        </a>
+                        <a href="#synchro_monster" onclick="skipclose()">
+                            <p>
+                                Synchro Monster
+                            </p>    
+                        </a>
+                        <a href="#xyz_monster" onclick="skipclose()">
+                             <p>
+                                Xyz Monster
+                            </p>   
+                        </a>
+                        <a href="#pendulum_monster" onclick="skipclose()">
+                            <p>
+                                Pendulum Monster
+                            </p>
+                        </a>
+                        <a href="#link_monster" onclick="skipclose()">
+                             <p>
+                                Link Monster
+                            </p>   
+                        </a>    
+                    </div>
+                    <a href="#spell_card" onclick="skipclose()">
+                        <h1 class="text-lg text-gray-400 p-3 pl-10">
+                            Spell Card
+                        </h1>
+                    </a>
+                    <div id="card">
+                        <a href="#normal_spell" onclick="skipclose()">
+                            <p>
+                                Normal Spell
+                            </p>
+                        </a>
+                        <a href="#equip_spell" onclick="skipclose()">
+                            <p>
+                                Equip Spell
+                            </p>
+                        </a>
+                        <a href="#ritual_spell" onclick="skipclose()">
+                            <p>
+                                Ritual Spell
+                            </p>    
+                        </a>
+                        <a href="#continuous_spell" onclick="skipclose()">
+                            <p>
+                                Countinuous Spell
+                            </p>    
+                        </a>
+                        <a href="#field_spell" onclick="skipclose()">
+                            <p>
+                                Field Spell
+                            </p>
+                        </a>
+                        <a href="#quick_play_spell" onclick="skipclose()">
+                            <p>
+                                Quick-Play Spell
+                            </p>
+                        </a>                            
+                    </div>
+                    <a href="#trap_card" onclick="skipclose()">
+                        <h1 class="text-lg text-gray-400 p-3 pl-10">
+                            Trap Card
+                        </h1>    
+                    </a>
+                    <div id="card">
+                        <a href="#normal_trap" onclick="skipclose()">
+                            <p>
+                                Normal Trap
+                            </p>
+                        </a>
+                        <a href="#continuous_trap" onclick="skipclose()">
+                            <p>
+                                Countinuous Trap
+                            </p>
+                        </a>
+                        <a href="#counter_trap" onclick="skipclose()">
+                            <p>
+                                Counter Trap
+                            </p>    
+                        </a>    
+                    </div>
+                </div>
+            </div>
+            <div class="border-gray-800 border-2 mb-1">
+                <a href="#monster_effect" onclick="skipclose()">
+                    <h1 class="text-xl text-white p-3">
+                        Understand The Monster Effect
+                    </h1>    
+                </a>
+                <div id="effect">
+                    <a href="#ignition_effect" onclick="skipclose()">
+                        <p>
+                            Ignition Effect
+                        </p>    
+                    </a>
+                    <a href="#trigger_effect" onclick="skipclose()">
+                        <p>
+                            Trigger Effect
+                        </p>    
+                    </a>
+                    <a href="#continuous_effect" onclick="skipclose()">
+                        <p>
+                            Continuous Effect
+                        </p>    
+                    </a>
+                    <a href="#quick_effect" onclick="skipclose()">
+                        <p>
+                            Quick Effect
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="border-gray-800 border-2 mb-1">
+                <a href="#spell_speed_and_chain_link" onclick="skipclose()">
+                    <h1 class="text-xl text-white p-3">
+                        Spell Speed and Chain Link
+                    </h1>    
+                </a>
+                <div id="effect">
+                    <a href="#spell_speed" onclick="skipclose()">
+                        <p>
+                            Spell Speed
+                        </p>    
+                    </a>
+                    <a href="#chain_link" onclick="skipclose()">
+                        <p>
+                            Chain Link
+                        </p>    
+                    </a>                   
+                </div>
+            </div>
+            <div class="border-gray-800 border-2">
+                <a href="#overall" onclick="skipclose()">
+                    <h1 class="text-xl text-white p-3">
+                        Overall
+                    </h1>
+                </a>
+            </div> 
+        </div>
+        <div id="tutorials">
+            <h1 class="text-white text-3xl pb-8">
+                Basic Rule
+            </h1>
+            <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                There are basic rules that you need to know before you can really play Yu-gi-oh. They include standard playmat, deck size's limitation and the gameplay.
+            </p>
+            <div id="playmat-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pb-8 pl-3">
+                    Playmat
+                </h1>
+                <p>
+                    A Yu-gi-oh Duel will be carried on in the playmat like the one below:
+                </p>
+                <div class="pb-8 flex w-full justify-center">
+                    <img src="image/playmat.png" width="60%" alt="playmat-image">
+                </div>
+                <p style="margin-bottom: 0px;">
+                    At the right corner of players' field is Main Deck Zone - where you place your Main Deck.
+                </p>
+                <p>
+                    At the left corner of players' field is Extra Deck Zone - where you place your Extra Deck.
+                </p>
+                <p style="margin-bottom: 0px;">
+                    Above the Main Deck's zone is the Graveyard-GY that used for containing disable card.
+                </p>
+                <p>
+                    Above the Extra Deck's zone is the Field Zone where you place Field Spell.
+                </p>
+                <p style="margin-bottom: 0px;">
+                    Between the Field Zone and GY, there are 5 Main Monster Zones where your monsters placed and battling.
+                </p>
+                <p>
+                    Between the Extra Deck Zone and Main Deck Zone, there are 5 Spell & Trap Zones where you place your Spells and Traps, but as you see, two zones in the left and right has a difference. Those are also Pendulum Zones - the zones to place Pendulum Monsters.
+                </p>
+                <p>
+                    In the middle of the playmat, there're 2 extra zones called Extra Monster Zone. Almost monsters from Extra Deck can be placed in Main Monster Zones, except Link Monster that can only be placed in Extra Monster Zones.
+                </p>
+            </div>         
+            <div id="deck-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-3 text-white">
+                    Decks
+                </h1>
+                <p style="text-indent: 48px;">
+                    To start a Yu-gi-oh duel, beside the playmat, you need a deck(s):
+                </p>
+                <p>
+                    ● Main Deck (must contain 40-60 cards): This deck includes Monsters, Spells and Traps that you will always use during your playing process.
+                </p>
+                <p>
+                    ● Extra Deck (can contain 0-15 cards): This deck includes monsters that can be only summoned by special methods. These monsters can make your static more competitive so you can defeat your opponent easier.
+                </p>
+                <p>
+                    ● Side Deck (can contain 0-15 cards): In standard Match (includes 3 Duels), after finishing a Duel, you can add and remove cards from your Main Deck/Extra Deck to deal up with opponent's deck (this usually happens in a tournament). But remepber, the deck size with be a constant after siding-process.
+                </p>
+            </div>
+            <div id="gameplay-link" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-3 text-white">
+                    Gameplay
+                </h1>
+                <p class="text-xl pb-8 pl-5 indent-12 text-gray-400">
+                    At the start of the Duel, 2 players must decide which one will go first (by throwing a dice, rock-paper-scissor, etc...). Then, each players draw 5 cards and player who go first will play his/her turn.
+                </p>
+            </div>
+            <div id="phase-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-6 text-white">
+                    Phases In A Turn
+                </h1>
+                <p style="text-indent: 48px;">
+                    In a turn, there are 6 phases:
+                </p>
+                <p>
+                    ● Draw Phase: Player draw 1 card from your Main Deck (whoever go first don't draw in the first turn).
+                </p>
+                <p>
+                    ● Standby Phase: The phase between Draw Phase and Main Phase 1.
+                </p>
+                <p>
+                    ● Main Phase 1: During Main Phase, player can summon, activate Spells and Traps.
+                </p>
+                <p>
+                    ● Battle Phase: During this phase, your Monsters can attack and battle with opponents (whoever go first can't conduct Battle Phase).
+                </p>
+                <p>
+                    ● Main Phase 2: After Battle Phase, you can do things like you can do in Main Phase 1
+                </p>
+                <p>
+                    ● End Phase: The end of the turn.
+                </p>
+            </div>
+            <div id="summon-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-6 text-white">
+                    Summon Monster
+                </h1>
+                <p style="text-indent: 48px;">
+                    There are 4 types of Summon in Yu-gi-oh: Normal Summon, Set, Flip Summon and Special Summon:
+                </p>
+                <p>
+                    ● Normal Summon: Place your monster from your hand to your Main Monster Zone vertically (face-up).
+                </p>
+                <div class="pb-8 flex w-full justify-center">
+                    <video src="image/Normal Summon.mp4" style="width: 60%;" controls></video>
+                </div>
+                <p>
+                    ● Set: Place your monster from your hand to your Main Monster Zone horizontally (face-down).
+                </p>
+                <div class="pb-8 flex w-full justify-center">
+                    <video src="image/Normal Set.mp4" style="width: 60%;" controls></video>
+                </div>
+                <p>
+                    ● Flip Summon: When your monster already Set on Main Monster Zone, you can flip it up and also place it vertically. (You can't Flip Summon a monster in the turn it was set)
+                </p>
+                <div class="pb-8 flex w-full justify-center">
+                    <video src="image/Flip Summon.mp4" style="width: 60%;" controls></video>
+                </div>
+                <p>
+                    ● Special Summon: The summon method using special method or in special condition (face-up vertically or horizontally)
+                </p>
+                <p style="margin-bottom: 0px; text-indent: 48px;">
+                    You can only either Normal Summon or Set a monster once per turn.
+                </p>
+                <p style="margin-bottom: 0px; text-indent: 48px">
+                    You can Flip Summon monsters as many as you want if you have enough Set monster 
+                </p>
+                <p style="text-indent: 48px">
+                    You can Special Summon monsters as many as you want.
+                </p>
+            </div>            
+            <div id="win-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-6 text-white">
+                    Winning Conditions
+                </h1>
+                <p>
+                    ● Each players has 8000 Life Points-LP, whoever can make opponent's LP reduce to 0 wins the Duel, if both player's LP redude to 0, it will treat as a Draw.
+                </p>
+                <p>
+                    ● While player need to draw, whoever can't draw card loses the Duel, if both, it will be treated as a Draw.
+                </p>
+                <p>
+                    ● By the effects of cards. If you can provide condition that list on the card, you can have a special Win.
+                </p>
+            </div>            
+            <div id="battle" style="scroll-margin-top: 100px;">
+                <h1 class="text-3xl pb-8 pl-6 text-white">
+                    Battling Mechanism
+                </h1>
+                <p style="text-indent: 48px;">
+                    Now, let's learn about Battle Position. There 3 types battle position: Attack Postion, face-up Defense Postion and face-down Defense Postion:
+                </p>
+                <p>
+                    ● Attack Postion: Monster that placed vertically.
+                </p>
+                <p>
+                    ● Face-up Defense Postion: Monster that placed horizontally (face-up).
+                </p>
+                <p>
+                    ● Face-down Defense Postion: Monster that was Set.
+                </p>
+                <p style="text-indent: 48px;">
+                    A monster can't attack unless it's in Attack Position. If it attack a monster, there will be 3 situations:
+                </p>
+                <p>
+                    ● If attacked monster is in Attack Position: Which monster has less ATK will be destroyed (and sent to GY), then the owner will lose LP equal to the difference.
+                </p>
+                <div class="pb-8 flex w-full justify-center">
+                    <video src="image/Attack-Attack.mp4" style="width: 60%;" controls></video>
+                </div>
+                <p>
+                    ● If attacked monster is in face-up Defense Position: if attacking monster has less ATK than attacked monster's DEF, it won't be destroyed, but the owner loses LP equal to the difference; if attacked monster has less DEF than attacking monster's ATK, it will be destroyed, but the owner won't lose any LP. 
+                </p>
+                <div id="i1" class="pb-8 flex w-full gap-10 justify-center">
+                    <video src="image/Attack-Defense-1.mp4" style="width: 40%;" controls></video>
+                    <video src="image/Attack-Defense-2.mp4" style="width: 40%;" controls></video>
+                </div>
+                <p>
+                    ● If attacked monster is in face-down Position: Attacked monster must first be flipped up, then apply rules like with monster in face-up Defense Position
+                </p>
+            </div>
+            <div id="cardunderstand-content" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pb-8">
+                    Understand The Card
+                </h1>
+                <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    In Yu-gi-oh, we have 3 types of cards: Monster, Spell, Trap.
+                </p>
+            </div>
+            <div id="monster_card" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pl-3 pb-8">
+                    Monster Card
+                </h1>
+                <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    A Monster Card will include:
+                </p>
+                <div id="card-review">
+                    <p>
+                        ● Card Name: To identify cards with each others.
+                    </p>
+                    <p>
+                        ● Attribute: There're 7 Attributes - LIGHT, DARK, FIRE, WATER, EARTH, WIND, DIVINE.
+                    </p>
+                    <p>
+                        ● Level (from 1 - 12): Great Level cames with great power.
+                    </p>
+                    <p style="text-indent: 48px;">
+                        The Level of monsters decide how they are Normal Summoned or Set: For Level 4 or lower monsters, you can Normal Summon/Set it without Tributing (send monster from field to GY); for Level 5 or 6 monsters, you must Tributing 1 monster you control to Normal Summon/set it; for Level 7 or more monsters, you must Tributing 2.
+                    </p>
+                    <p>
+                        ● Card Image: Show monster image.
+                    </p>
+                    <p>
+                        ● Information: Includes monsters type such as Spellcaster, Dragon, Warrior,...
+                    </p>
+                    <p>
+                        ● Description/Effect: To descript about monster and its effects.
+                    </p>
+                    <p>
+                        ● ATK/DEF.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Monster Card.png" width="80%" alt="monster_card">
+                    </div>
+                </div>
+                <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    Next, we will learn about some types of monsters.
+                </p>
+            </div>
+            <div id="card-details">
+                <div id="normal_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Normal Monster
+                    </h1>
+                    <p>
+                        Normal Monster is monster card with no effect, so in its card text will be its description.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Normal Monster.png" width="50%" alt="monster_card">
+                    </div>
+                    <p>
+                        As you can see, in the information of Normal Monster Card, beside its type is text "Normal"
+                    </p>
+                </div>
+                <div id="effect_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Effect Monster
+                    </h1>
+                    <p>
+                        Effect Monster is monster card with special effects, so in its card text will descript about its effects. And in its information is text "Effect"
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Effect Monster.png" width="50%" alt="monster_card">
+                    </div>
+                    <p style="margin-bottom: 0px;">
+                        This card's text descript: "Cannot be destroyed by battle with monsters that has 1900 ATK or more", means when this monster battle with monster that has 1900 ATK or more, it can be destroyed even though it has lower ATK, but you still lose LP.
+                    </p>
+                    <p>
+                        A Monster can also be both Effect Monster and Ritual, Fusion, Synchro, Xyz, Pendulum or Link Monster
+                    </p>
+                </div>
+                <div id="ritual_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Ritual Monster
+                    </h1>
+                    <p>
+                        Ritual Monster is monster that only can be Special Summoned (from your hand) by using Ritual Spell and requiring tributing monsters from field or hand whose total Levels equal or exceed the Level Ritual Monster. This summon method called "Ritual Summon" (All monsters must be face-up before being sent to GY).
+                    </p>
+                    <div id="i2" class="pb-8 flex w-full gap-10 justify-center">
+                        <img src="image/Ritual Monster.png" width="40%" alt="monster_card">
+                        <img src="image/Ritual Spell.png" width="40%" alt="monster_card">
+                    </div>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Ritual Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        There are Level 8 Ritual Monster and Ritual Spell that used to Ritual Summon it, so Spell's text will ask you to tribute monsters whose total Levels equal 8 or more.
+                    </p>
+                </div>
+                <div id="fusion_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Fusion Monster
+                    </h1>
+                    <p>
+                        Fusion Monster is Extra Deck monster that only can be Special Summoned by Spells called "Polymerization" and requiring sending monster from hand or field that listed in Fusion Monster's text. This summon method called "Fusion Summon" (All monster must be face-up before being sent to GY).
+                    </p>
+                    <div id="i3" class="pb-8 flex w-full gap-10 justify-center">
+                        <img src="image/Fusion Monster.png" width="40%" alt="monster_card">
+                        <img src="image/Polymerization.png" width="40%" alt="monster_card">
+                    </div>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Fusion Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        This Fusion Monster requires 3 "Blue-eyes White Dragon" mean you need 3 "Blue-eyes White Dragon" in your hand or field to activate Spell "Polymerization" to Fusion Summon it.
+                    </p>
+                </div>
+                <div id="synchro_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Synchro Monster
+                    </h1>
+                    <p style="margin-bottom: 0px;">
+                        Synchro Monster is Extra Deck monster that only can be Special Summoned by sending monster from your field to GY whose total Levels exactly equal to the Level of Synchro Monster. This summon method called "Synchro Summon" (All monsters must be face-up before being sent to GY).
+                    </p>
+                    <p>
+                        Besides, Synchro Summon requires specific type of monster - Tuner
+                    </p>
+                    <div id="i4" class="pb-8 flex w-full gap-10 justify-center">
+                        <img src="image/Tuner Monster.png" width="40%" alt="monster_card">
+                        <img src="image/Synchro Monster.png" width="40%" alt="monster_card">
+                    </div>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Synchro Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        In the field, we have Level 3 Tuner Monster and Level 3 non-Tuner monsters, so we can Synchro Summon Level 6 (3+3) Synchro Monster.
+                    </p>
+                </div>
+                <div id="xyz_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Xyz Monster
+                    </h1>
+                    <p>
+                        Xyz Monster is also Extra Deck monster but more special, because it don't have Level. To Xyz Summon it, you need overlay monsters in your field with he same Level in your field, and place Xyz Monster on top of those monsters. (All monsters must be face-up before being overlayed)
+                    </p>
+                    <div id="i5" class="pb-8 flex w-full gap-10 justify-center">
+                        <img src="image/Xyz Monster.png" width="50%" alt="monster_card">
+                    </div>
+                    <p>
+                        Xyz Monster "star" will place in opposite position with other monsters, it called Rank, and the Rank is equal to the Level of overlayed monsters.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Xyz Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        If Xyz Monster is also an Effect Monster, you can remove overlayed monsters to GY (detach materials) for activating Xyz Monster's effects (but it's not count as sending to GY)
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Detach.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        For example, opponent's monster declare an attack target your monster, but your monster can negate that attack by detaching its material.
+                    </p>
+                </div>
+                <div id="pendulum_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Pendulum Monster
+                    </h1>
+                    <p>
+                        Pendulum Monster is very special monsters, a copbinatioin of Spell and Monster. It can be the copbination of Spell with Normal, Effect, Ritual, Fusion, Synchro or Xyz Monster. And, in case Pendulum Monsters would be sent to GY, it will be place on top of Extra Deck (face-up).
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Pendulum Monster Leaves The Field.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <div id="i6" class="pb-8 flex w-full flex-wrap gap-10 justify-center">
+                        <img src="image/Normal Pendulum Monster.png" width="25%" alt="monster_card">
+                        <img src="image/Effect Pendulum Monster.png" width="25%" alt="monster_card">
+                        <img src="image/Ritual Pendulum Monster.png" width="25%" alt="monster_card">
+                        <img src="image/Fusion Pendulum Monster.png" width="25%" alt="monster_card">
+                        <img src="image/Synchro Pendulum Monster.png" width="25%" alt="monster_card">
+                        <img src="image/Xyz Pendulum Monster.png" width="25%" alt="monster_card">
+                    </div>
+                    <p>
+                        Pendulum Monsters' lower half have color of Spell and higher half have color of Monster. Also they has extra description-part called "Pendulum Scale" which is important to Pendulum Summon.
+                    </p>
+                    <p>
+                        Pendulum Monster can still be Summoned like the way to Summon its monster type (Normal, Ritual, Fusion, Synchro, Xyz).
+                    </p>
+                    <p>
+                        To Pendulum Summon, you must first place 2 Pendulum Monster in Pendulum Zone. Placing them will count as activating Spell and also those monsters will be treated as Spell (you can only use its effects that descripted in Pendulum Scale).
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Pendulum Scale.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p style="margin-bottom: 0px;"> 
+                        While you having 2 Pendulum Monsters in Pendulum Zones, you can Pendulum Summon monsters. Depending on Pendulum Scales of those 2 Pendulum Monsters, you can Special Summon any number of monsters from (your hand) or Pendulum Monsters that placed face-up on Extra Deck whose Levels is in the range of Pendulum Scale.
+                    </p>
+                    <p>
+                        For example, if you have 2 Pendulum Monsters: one has Pendulum Scale is 1 and the other has Pendulum Scale is 8, you can Special Summon monsters with Level from 2 to 7.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Pendulum Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p> 
+                        You can Pendulum Summon monsters that are not Pendulum Monster if their Level is in Pendulum Scale. Moreover, you can only Pendulum Summon 1 Pendulum Monster from Extra Deck per turn (and it must be placed on Extra Monster Zone), you also can only Pendulum Summon once per turn.
+                    </p>
+                </div>
+                <div id="link_monster" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Link Monster
+                    </h1>
+                    <p> 
+                        Link Monster is Extra Deck monsters which can easily Special Summon by sending number of monsters from your field to GY equal to its Link Rating (Link Summon). There are 2 Extra Monster Zones in the field, but you can only use one.
+                    </p>
+                    <div id="i7" class="pb-8 flex w-full gap-10 justify-center">
+                        <video src="image/Normal Link Summon-1.mp4" style="width: 40%;" controls></video>
+                        <video src="image/Normal Link Summon-2.mp4" style="width: 40%;" controls></video>
+                    </div>
+                    <p>
+                        Now, let's take a look of Link Monster Card.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Link Monster.png" width="50%" alt="monster_card">
+                    </div>
+                    <p style="margin-bottom: 0px;"> 
+                        Link Monsters don't have Level/Rank and DEF (so it can't be place in Defense Position), but they have 8 arrows (Link Rating). Which Zones that Link Monster point to can be treated as Extra Monster Zone for Pendulum Summon or Link Summon.
+                    </p>
+                    <p> 
+                        (If 2 Link Monsters point to each others, it called co-link)
+                    </p>
+                    <p> 
+                        If you can make an Extra Link - the arrangement of co-linked Link Monster, like the one below, you can take own of the left Extra Monster Zones:
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Extra Link.png" width="70%" alt="monster_card">
+                    </div>
+                    <p style="margin-bottom: 0px;"> 
+                        If you use Link Monster to Link Summon another Link Monster, it can be treated as 1 monster or n monster (n is its Link Rating). For example, if you Link Summon Link-4 Monster like the one above, you can send 4 monsters to GY (can include Link Monster or not), or 2 Link-2 Monsters, or 2 monsters (include Link Monster or not) and Link-2 Monster.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Link Summon.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p> 
+                        But, if Link-4 Monster you need to Link Summon requires 3+ monsters, you can use 2 Link-2 monsters as Link Materials, you must use at least 3 monsters.
+                    </p>
+                </div>
+            </div>
+            <div id="spell_card" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pl-3 pb-8">
+                    Spell Card
+                </h1>
+                <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    Spell Card is a card that you can activate from your hand by placing it in your Spell & Trap Zones to give yourself more advantages. A Spell Card will include:
+                </p>
+                <div id="card-review">
+                    <p>
+                        ● Card Name: To identify cards with each others.
+                    </p>
+                    <p>
+                        ● Spell Icon.
+                    </p>
+                    <p>
+                        ● Spell Symbol: Normal, Equip, Ritual, Continuous, Field or Quick-Play
+                    </p>
+                    <p style="text-indent: 48px;">
+                        Although Pendulum Monsters placed in Pendulum Zones treated as Spell, but they're not considered as any of above types.
+                    </p>
+                    <p style="text-indent: 48px;">
+                        There are symbols of Spell Type (Normal Spell don't have symbol):
+                    </p>
+                    <div id="symbol" class="pb-8 flex w-full flex-wrap gap-10 justify-center">
+                        <div id="symbol-image">
+                            <img src="image/equip symbol.png" alt="spell_symbol">
+                            <p>
+                                Equip Spell Symbol
+                            </p>
+                        </div>
+                        <div id="symbol-image">
+                            <img src="image/ritual symbol.png" alt="spell_symbol">
+                            <p>
+                                Ritual Spell Symbol
+                            </p>
+                        </div>
+                        <div id="symbol-image">
+                            <img src="image/continuous symbol.png" alt="spell_symbol">
+                            <p style="text-align: center;">
+                                Continuous Spell Symbol
+                            </p>
+                        </div>
+                        <div id="symbol-image">
+                            <img src="image/field symbol.png" alt="spell_symbol">
+                            <p>
+                                Field Spell Symbol
+                            </p>
+                        </div>
+                        <div id="symbol-image">
+                            <img src="image/quick-play symbol.png" alt="spell_symbol">
+                            <p style="text-align: center;">
+                                Quick-Play Spell Symbol
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        ● Card Image: Show spell image.
+                    </p>
+                    <p>
+                        ● Effects: To descript about spells' effects.
+                    </p>
+                </div>
+                <div class="pb-8 flex w-full justify-center">
+                    <img src="image/Spell Card.png" width="50%" alt="spell_card">
+                </div>    
+            </div>
+            <div id="card-details">
+                <div id="normal_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Normal Spell
+                    </h1>
+                    <p>
+                        Normal Spell is Spell that only can be activated during the Main Phase, and will be sent to GY after it resolves.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Normal Spell.png" width="50%" alt="spell_card">
+                    </div>
+                    <p>
+                        For example, you can activate this card, then you can draw 2 cards, after drawing 2 cards, this card will be sent from your Spell & Trap Zones to your GY.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Activate Normal Spell.mp4" style="width: 60%;" controls></video>
+                    </div>
+                </div>
+                <div id="equip_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Equip Spell
+                    </h1>
+                    <p>
+                        Equip Spell like an equipment card to your monsters (strengthen your monster). After activating Equip Spell by choosing a monster, it will remains on your Spell & Trap Zones, but if monster equiped with that spell leaves the field, that spell will be destroyed and sent to GY.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Equip Spell.png" width="50%" alt="spell_card">
+                    </div>
+                    <p>
+                        This card above can equip to a Spellcaster-type monster, and that monster will gain 300 ATK and DEF.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Activate Equip Spell.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <p>
+                        As you can see, you activate "Book of Secret Arts" equip to your monster, your opponent activate Normal Spell "Raigeki" destroy your monster (make that monster leaves the field), so "Book of Secret Arts" is sent to GY
+                    </p>
+                </div>
+                <div id="ritual_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Ritual Spell
+                    </h1>
+                    <p>
+                        Ritual Spell is Spell used to Ritual Summon Ritual Monster, you can back to Ritual Monster part to watch again.
+                    </p>
+                </div>
+                <div id="continuous_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Continuous Spell
+                    </h1>
+                    <p>
+                        The name has said everthing, Continuous Spell is spell that remains forever on the field (except being destroyed by card effects)
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Activate Continuous Spell.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Continuous Spell.png" width="50%" alt="spell_card">
+                    </div>
+                    <p>
+                        After activating this card, it will remains on the field, and Insect monsters your opponent controls can't declare attack.
+                    </p>
+                </div>
+                <div id="field_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Field Spell
+                    </h1>
+                    <p>
+                        Field Spells are the same as Continuous Spell, but is will be placed on Field Zone instead of Spell & Trap Zones.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <video src="image/Activate Field Spell.mp4" style="width: 60%;" controls></video>
+                    </div>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Field Spell.png" width="50%" alt="spell_card">
+                    </div>
+                    <p>
+                        All of Spell Types above can only be activated during the Main Phase
+                    </p>
+                </div>    
+                <div id="quick_play_spell" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8 pl-5">
+                        Quick-Play Spell
+                    </h1>
+                    <p>
+                        Quick-Play Spell is the same as Normal Spell, but you can activate it during any Phases of the turn.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Quick-Play Spell.png" width="50%" alt="spell_card">
+                    </div>
+                </div>    
+            </div>
+            <div id="trap_card" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pl-3 pb-8">
+                    Trap Card
+                </h1>
+                <p  class="text-gray-400 text-xl pl-5 indent-12">
+                    Trap Cards are cards that can be only activate if they were set (face-down horizontally) in the previous turn. (Spells can also be set, but you can activate it the turn it was set except Quick-Play Spell).
+                </p>
+                <p  class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    A Trap Card will include:
+                </p>
+                <div id="card-review">
+                    <p>
+                        ● Card Name: To identify cards with each others.
+                    </p>
+                    <p>
+                        ● Trap Icon.
+                    </p>
+                    <p>
+                        ● Trap Symbol: Normal, Continuous, Counter
+                    </p>
+                    <p style="text-indent: 48px;">
+                        There are symbols of Trap type (Normal Trap don't have symbol):
+                    </p>
+                    <div id="symbol" class="pb-8 flex w-full flex-wrap gap-24 justify-center">
+                        <div id="symbol-image">
+                            <img src="image/continuous symbol.png" alt="trap_symbol">
+                            <p style="text-align: center;">
+                                Continuous Trap Symbol
+                            </p>
+                        </div>
+                        <div id="symbol-image">
+                            <img src="image/counter symbol.png" alt="trap_symbol">
+                            <p style="text-align: center;">
+                                Counter Trap Symbol
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card-details">
+                <div id="normal_trap" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Normal Trap
+                    </h1>
+                    <p>
+                        Normal Traps work as Normal Spells and can make create the unprediction in your tactics, will be sent to GY after it resolves.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Normal Trap.png" width="50%" alt="spell_card">
+                    </div>
+                </div>
+                <div id="continuous_trap" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Continuous Trap
+                    </h1>
+                    <p>
+                        Continuous Traps work as Continuous Spells, will remain on the field forever.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Continuous Trap.png" width="50%" alt="spell_card">
+                    </div>
+                </div>
+                <div id="counter_trap" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Counter Trap
+                    </h1>
+                    <p>
+                        Counter Traps is a card that can counter your opponent's tactics, will be sent to GY after it resolves.
+                    </p>
+                    <div class="pb-8 flex w-full justify-center">
+                        <img src="image/Counter Trap.png" width="50%" alt="spell_card">
+                    </div>
+                </div>
+            </div>
+            <div id="monster_effect" style="scroll-margin-top: 100px;">
+                <h1 class="text-white text-3xl pb-8">
+                    Understand The Monster Effects
+                </h1>
+                <p class="text-gray-400 text-xl pl-5 pb-8 indent-12">
+                    Monster Effects are classified to 4 types: Ignition, Trigger, Continuous or Quick Effect. (Quick Effect is can be either Ignition or Trigger Effect).
+                </p>
+            </div>    
+            <div id="card-details">
+                <div id="ignition_effect" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Ignition Effect
+                    </h1>
+                    <p>
+                        Ignition Effect is the effect that you can activate it whenever you want during your Main Phases (any Phases if it is Quick Effect).
+                    </p>
+                </div>
+                <div id="trigger_effect" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Trigger Effect
+                    </h1>
+                    <p>
+                        Trigger Effect is the effect that can be only activated when suitable trigger happens (when a monster is summoned, a card is activated,...)
+                    </p>    
+                </div>
+                <div id="continuous_effect" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Continuous Effect
+                    </h1>
+                    <p>
+                        Continuous Effect don't need to be activated, also it always available on the field.
+                    </p>    
+                </div>
+                <div id="quick_effect" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Quick Effect
+                    </h1>
+                    <p>
+                        Quick Effect is a effect that can be activated during any Phases of turn.
+                    </p>
+                </div>       
+            </div>             
+            <div id="card-details">
+                <div id="spell_speed_and_chain_link" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pb-8">
+                        Spell Speed and Chain Link
+                    </h1>
+                    <p>
+                        Sometimes, there will be 2 or more cards or effects can be activated. So how we know which card can be activated first, and which card will resolve first.
+                    </p>    
+                </div>
+                <div id="spell_speed" style="scroll-margin-top: 100px;">
+                    <h1 class="text-white text-3xl pl-5 pb-8">
+                        Spell Speed
+                    </h1>
+                    <p>
+                        Spell Speed refers how "fast" a card or effect resolves after activation. There are 3 Spell Speeds:
+                    </p>
+                    <p style="margin-bottom:0px; text-indent: 96px;">
+                        ● Spell Speed 1: The activation of Normal, Equip, Continuous, Field, Ritual Spell, or its effects and the activation of monsters' effects.
+                    </p>
+                    <p>
+                        Cards or effects has Spell Speed 1 can't be activated in respond to other cards or effects activation, it means you can activated 2 or more cards that have Spell Speed at the same time. 
+                    </p>
+                    <p style="margin-bottom:0px; text-indent: 96px;">
+                        ● Spell Speed 2: The activation of Normal, Continuous Traps, Quick-Play Spells or its effects and the activation of monsters' Quick Effects.
+                    </p>
+                    <p>
+                        Cards or effects has Spell Speed 2 can be activated in respond to Spell Speed 2 and Spell Speed 1 cards or effects activation.
+                    </p>
+                    <p style="text-indent: 96px;">
+                        ● Spell Speed 3: Only the activations of Counter Traps has Spell Speed 3, of course it can be activated in respond to any other cards or effects activation.
+                    </p>
+                    <p>
+                        If 2 or more cards are activated in a row, it will create a Chain Link.
+                    </p>    
+                </div>
+                <div id="chain_link">
+                    <h1 class="text-white text-3xl pl-5 pb-8">
+                        Chain Link
+                    </h1>
+                    <p>
+                        When a cards or effects are activated consecutively, the first activated card is Chain Link 1, the second card is Chain Link 2,... Then, card with highest Chain Link will resolve first.
+                    </p>
+                </div>        
+            </div>
+            <div id="card-details">
+                <div id="overall">
+                    <h1 class="text-white text-3xl pl-3 pb-8">
+                        Overall
+                    </h1>
+                    <p>
+                        There is a tutorial for people who want to play Yu-gi-oh. Now, you can start your own duel!
+                    </p>
+                </div>    
+            </div>
+        </div>
+        <div id="contact" class="flex bg-black">
+            <div id="blank"></div>
+            <div id="information" class="flex">
+                <div id="information1" class="flex items-center justify-center">
+                    <h1 class="text-2xl text-white">
+                        CONTACT
+                    </h1>
+                </div>
+                <div id="information2" class="flex flex-col justify-between">
+                    <a onclick="facebook()" class="text-white mt-8 block hover:cursor-pointer">
+                        Facebook: Mai Lương Bắc
+                    </a>
+                    <a onclick="gmail()" class="text-white pb-8 block hover:cursor-pointer">
+                        Gmail: serty1023@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div id="blank"></div>
+        </div>
+    </div>
+    <script>
+        let width = screen.width;
+        function opennavigationmenu()
+        {
+            if (width >= 1000)
+            {
+                document.getElementById("navigation-menu").style.height = "calc(100% - 250px)";
+                document.getElementById("close").style.fontSize = "25px";
+                document.getElementById("close").style.lineHeight = "50px";
+            }
+            if (width >= 300 && width < 1000)
+            {
+                document.getElementById("navigation-menu").style.height = "calc(100% - 170px)";
+                document.getElementById("close").style.fontSize = "25px";
+                document.getElementById("close").style.lineHeight = "50px";
+            }
+        }
+        function closenavigationmenu()
+        {
+            document.getElementById("navigation-menu").style.height = "0px";
+            document.getElementById("close").style.fontSize = "0px";
+            document.getElementById("close").style.lineHeight = "0px"
+        }
+        function skipclose()
+        {
+            if (width >= 300 && width < 700)
+            {
+                document.getElementById("navigation-menu").style.height = "0px";
+                document.getElementById("close").style.fontSize = "0px";
+                document.getElementById("close").style.lineHeight = "0px"
+            }
+        }
+        function indentation()
+        {
+            if (width >= 700 && width < 1200)
+            {
+                document.getElementById("tutorials").style.marginLeft = "35%";
+                document.getElementById("tutorials").style.width = "60%";
+            }
+        }
+        function deleteindentation()
+        {
+            if (width >= 700 && width < 1200)
+            {
+                document.getElementById("tutorials").style.width = "80%";
+                document.getElementById("tutorials").style.marginLeft = "10%";
+            }
+        }
+    </script>
+</body>
+</html>

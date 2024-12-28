@@ -1,0 +1,306 @@
+#page
+{    
+    height: fit-content;
+}
+    #header
+    {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        height: 75px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+        #logo
+        {
+            height: 75px;
+            width: 23%;
+        }
+        #menu
+        {
+            height: 75px;
+            width: 46%;
+        }
+    #alternative-menu
+    {
+        z-index: 1;
+        width: 100%;
+        position: fixed;
+        top: 80px;
+    }
+            #rule::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transform-origin: left;
+                transition: all ease 1s;
+            }
+            #rule:hover::after
+            {
+                transform: scale(1,1);
+            }
+            #tactics::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transition: all ease 0.3s;
+            }
+            #tactics:hover::after
+            {
+                transform: scale(1,1);
+            }
+            #search::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: rgb(75,85,99);
+                left: 0;
+                transform: scale(0,0);
+                transform-origin: right;
+                transition: all ease 0.3s;
+            }
+            #search:hover::after
+            {
+                transform: scale(1,1);
+            }
+        #register-login
+        {
+            height: 75px;
+            width: 23%;
+        }
+            #login::after
+            {
+                content: "";
+                display: flex;
+                height: 2px;
+                width: 100%;
+                background-color: white;
+                left: 0;
+                transform: scale(0,0);
+                transition: all ease 0.3s;
+            }
+            #login:hover::after
+            {
+                transform: scale(1,1);
+            }  
+        #language
+        {
+            height: 75px;
+            width: 8%;
+        }
+    #tactics_list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 5%;
+    }
+        #tactic
+        {
+            margin-top: 50px;
+            height: fit-content;
+            width: 30%;
+            position: relative;
+        }
+        #tactic:hover
+        {
+            cursor: pointer;
+            scale:1.1;
+            #guide, #guide-background
+            {
+                height: 50%;
+            }
+            #guide p
+            {
+                color: white;
+            }
+        }
+            #guide-background
+            {
+                position: absolute;
+                opacity: 0.75;
+                height: 33%;
+                width: 100%;
+                bottom: 0px;
+                background-color: black;
+                transition: 0.2s;
+            }
+            #guide
+            {
+                position: absolute;
+                height: 33%;
+                width: 100%;
+                bottom: 0px;
+                transition: 0.2s;
+            }
+            #guide h1
+            {
+                color: white;
+                font-size: 30px;
+                text-align: center;
+            }
+            #guide p
+            {
+                color: gray;
+                font-size: 20px;
+                padding-left: 5px;
+                line-height: 1.1;
+            }
+    #control-page
+    {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        #control
+        {
+            scale: 3;
+        }
+        #control:hover
+        {
+            i
+            {
+                color: rgb(253 244 71);
+            }
+        }
+        #control i
+        {
+            color: white;
+        }
+        #page-number
+        {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #page-number a
+        {
+            color: white;
+            font-size: 30px;
+            transition: 0.2s;
+        }
+        #page-number a:hover
+        {
+            color: gray;
+        }
+            #full-page:hover
+            {
+                cursor: pointer;
+            }
+    #page-number-content-1
+    {
+        scale: 0;
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+        padding-top: 25px;
+    }
+    #page-number-content-1 p
+    {
+        text-align: center;
+        color: white;
+        width: 7%;
+        font-size:30px;
+    }
+    #page-number-content-1 p:hover
+    {
+        cursor: pointer;
+        color: gray;
+    }
+    #page-number-content-2
+    {
+        scale: 0;
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3%;
+        padding-bottom: 25px;
+    }
+    #page-number-content-2 p
+    {
+        text-align: center;
+        color: white;
+        width: 7%;
+        font-size:30px;
+    }
+    #page-number-content-2 p:hover
+    {
+        cursor: pointer;
+        color: gray;
+    }
+    #contact
+    {
+        margin-top: 100px;
+        height: 125px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+        #blank
+        {
+            width: 33%;
+        }
+        #information
+        {
+            width: 34%;
+        }
+            #information1
+            {
+                width: 33%;
+                height: 125px;
+            }
+            #information2
+            {
+                width: 67%;
+                height: 125px;
+            }
+@media (max-width: 699px)
+{    
+    #header
+    {
+        justify-content: space-between;
+        #logo
+        {
+            margin-left: 2%;
+            width: 23%;
+        }
+        #register-login
+        {
+            width: 50%;
+        }
+        #language
+        {
+            width: 25%;
+        }
+        #menu
+        {
+            display: none;
+        }
+    }
+    #tactics_list
+    {
+        width: 75%;
+        gap: 0;
+        #tactic
+        {
+            width: 100%;
+        }
+    }
+}

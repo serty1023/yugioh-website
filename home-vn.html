@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Yu-Gi-Oh! Trading Card Game Website</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/b9604df615.js" crossorigin="anonymous"></script>
+    <script>
+        function facebook() 
+        {
+            window.open("https://www.facebook.com/profile.php?id=100086509432456")
+        }
+        function gmail()
+        {
+            window.open("https://mail.google.com/mail/u/0/?pli=1#inbox?compose=GTvVlcSDXmjmTgKZxzzgLLhgrMXkhHdDXbrKnVsgSXXNXxpdVvjLZdNXkXFxFjThLzNKvJRmNlnnM")
+        }
+    </script>
+</head>
+<body>
+    <div id="page" class="bg-gray-900">
+        <div id="header" class="flex bg-black">
+            <div id="logo" class="flex items-center justify-center">
+                <a href="home-vn.html">
+                    <img src="image\LOGO.png" alt="logo">
+                </a>
+            </div>
+            <div id="menu" class="flex items-center justify-between">
+                <a href="" id="rule" class="text-2xl text-white hover:text-gray-500">
+                    Hướng Dẫn Chơi
+                </a>
+                <a href="#" id="tactics" class="text-2xl text-white hover:text-gray-500">
+                    Chiến Thuật
+                </a>
+                <a href="#" id="search" class="text-2xl text-white hover:text-gray-500">
+                    Tìm Kiếm
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+            <div id="register-login" class="flex items-center justify-center">
+                <a href="login-form-vn.html" id="login" class="text-xl text-gray-600 hover:text-white">
+                    Đăng Nhập
+                </a>
+            </div>
+            <div id="language" class="flex items-center justify-center">
+                <form class="flex items-center justify-center"  onchange="window.location.href='home-en.html'">
+                    <select id="language-switch" name="language" class="bg-black text-white">
+                        <option>VN</option>
+                        <option>EN</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div id="alternative-menu" class="flex items-center justify-around">
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="unregister-tutorial-en.html" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Hướng Dẫn Chơi
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Chiến Thuật
+                </a>
+            </div>
+            <div class="bg-gray-700 opacity-75 rounded-3xl">
+                <a href="#" class="text-2xl text-white hover:text-gray-500 p-2">
+                    Tìm Kiếm
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>            
+        </div>
+        <div id="content" class="flex items-center justify-center">
+            <p id="introduction" class="text-gray-500">
+                Chào mừng bạn đến với trang web Yugioh của chúng tôi! Đây là nơi tuyệt vời để bạn khám phá và học hỏi mọi điều về thế giới Yugioh – từ cách chơi cơ bản đến chiến thuật nâng cao. Với hướng dẫn chi tiết, bạn sẽ nhanh chóng nắm bắt được luật chơi, cách xây dựng bộ bài và cách tối ưu hóa chiến thuật trong các trận đấu. Ngoài ra, trang web còn cung cấp công cụ tìm kiếm thông tin chi tiết về từng lá bài, giúp bạn dễ dàng tra cứu và hiểu rõ hơn về các lá bài yêu thích của mình. Dù bạn là người mới hay một người chơi kỳ cựu, trang web này sẽ là công cụ lý tưởng trên hành trình chinh phục Yugioh của bạn!
+            </p>
+        </div>
+        <div id="contact" class="flex bottom-0 bg-black">
+            <div id="blank"></div>
+            <div id="information" class="flex">
+                <div id="information1" class="flex items-center justify-center">
+                    <h1 class="text-2xl text-white">
+                        LIÊN HỆ
+                    </h1>
+                </div>
+                <div id="information2" class="flex flex-col justify-between">
+                    <a onclick="facebook()" class="text-white mt-8 block hover:cursor-pointer">
+                        Facebook: Mai Lương Bắc
+                    </a>
+                    <a onclick="gmail()" class="text-white mb-8 block hover:cursor-pointer">
+                        Gmail: serty1023@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div id="blank"></div>
+        </div>
+    </div>
+</body>
+</html>
