@@ -297,10 +297,25 @@
     #tactics_list
     {
         width: 75%;
-        gap: 0;
         #tactic
         {
             width: 100%;
+            #guide-background
+            {
+                height: 40%;
+            }
+            #guide
+            {
+                height: 40%;
+                h1
+                {
+                    font-size: 22px;
+                }
+                p
+                {
+                    font-size: 15px;
+                }
+            }
         }
     }
     #control-page
@@ -324,7 +339,42 @@
         width: 100%;
     }
 }
-@media (min-width: 700px)
+@media (min-width: 700px) and (max-width: 1199px)
+{
+    #alternative-menu
+    {
+        display: none;
+    }
+    #tactics_list
+    {
+        justify-content: center;
+    }
+    #tactic
+    {
+        width: 45%;
+    }
+    #guide-background
+    {
+        height: 40%;
+    }
+    #guide
+    {
+        height: 40%;
+        h1
+        {
+            font-size: 25px;
+        }
+        p
+        {
+            font-size: 18px;
+        }
+    }
+    #control-page
+    {
+        width: 60%;
+    }
+}
+@media (min-width: 1200px)
 {
     #alternative-menu
     {
