@@ -303,6 +303,26 @@
             width: 100%;
         }
     }
+    #control-page
+    {
+        width: 90%;
+        i
+        {
+            scale: 0.5;
+        }
+    }
+    #page-number-content-2, #page-number-content-1
+    {
+        width: 80%;
+    }
+    #blank
+    {
+        display: none;
+    }
+    #information
+    {
+        width: 100%;
+    }
 }
 @media (min-width: 700px)
 {
