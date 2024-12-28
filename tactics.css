@@ -304,3 +304,10 @@
         }
     }
 }
+@media (min-width: 700px)
+{
+    #alternative-menu
+    {
+        display: none;
+    }
+}
