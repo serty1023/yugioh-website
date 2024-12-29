@@ -136,7 +136,7 @@
                 width: 67%;
                 height: 125px;
             }
-@media (min-width: 300px) and (max-width: 1000px)
+@media (max-width: 699px)
 {    
     #header
     {
@@ -172,7 +172,7 @@
         width: 100%;
     }
 }
-@media (min-width:1000px) and (max-width:1500px)
+@media (min-width:700px) and (max-width:1199px)
 {
     #alternative-menu
     {
@@ -184,7 +184,7 @@
         font-size: 22.5px;
     }
 }
-@media  (min-width:1500px)
+@media  (min-width:1200px)
 {
     #alternative-menu
     {
