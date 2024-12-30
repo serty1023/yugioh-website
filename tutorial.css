@@ -287,12 +287,12 @@
                 #symbol-image
                 {
                     width: 15%;
+                    justify-items: center;
                 }
                 #symbol-image p
                 {
                     font-size: 17px;
                     display: flex;
-                    justify-content: center;
                     text-indent: 0px;
                     padding: 0px;
                     padding-top: 16px;
