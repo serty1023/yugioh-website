@@ -292,7 +292,7 @@
                 {
                     font-size: 17px;
                     display: flex;
-                    justify-items: center;
+                    justify-content: center;
                     text-indent: 0px;
                     padding: 0px;
                     padding-top: 16px;

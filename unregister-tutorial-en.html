@@ -1071,16 +1071,16 @@
         </div>
     </div>
     <script>
-        let width = screen.width;
+        let screenwidth = screen.width;
         function opennavigationmenu()
         {
-            if (width >= 1000)
+            if (screenwidth >= 1000)
             {
                 document.getElementById("navigation-menu").style.height = "calc(100% - 250px)";
                 document.getElementById("close").style.fontSize = "25px";
                 document.getElementById("close").style.lineHeight = "50px";
             }
-            if (width >= 300 && width < 1000)
+            if (screenwidth >= 300 && screenwidth < 1000)
             {
                 document.getElementById("navigation-menu").style.height = "calc(100% - 170px)";
                 document.getElementById("close").style.fontSize = "25px";
@@ -1095,7 +1095,7 @@
         }
         function skipclose()
         {
-            if (width >= 300 && width < 700)
+            if (screenwidth >= 300 && screenwidth < 700)
             {
                 document.getElementById("navigation-menu").style.height = "0px";
                 document.getElementById("close").style.fontSize = "0px";
@@ -1104,7 +1104,7 @@
         }
         function indentation()
         {
-            if (width >= 700 && width < 1200)
+            if (screenwidth >= 700 && screenwidth < 1200)
             {
                 document.getElementById("tutorials").style.marginLeft = "35%";
                 document.getElementById("tutorials").style.width = "60%";
@@ -1112,7 +1112,7 @@
         }
         function deleteindentation()
         {
-            if (width >= 700 && width < 1200)
+            if (screenwidth >= 700 && screenwidth < 1200)
             {
                 document.getElementById("tutorials").style.width = "80%";
                 document.getElementById("tutorials").style.marginLeft = "10%";
