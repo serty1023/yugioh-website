@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="login-page" class="bg-gray-900">
-		<form class="absolute top-10 right-10"  onchange="window.location.href='login-form-vn.html'">
+		<form id="language" class="absolute top-10 right-10"  onchange="window.location.href='login-form-vn.html'">
             <select id="language-switch" name="language" class="bg-gray-900 text-white">
                 <option>EN</option>
                 <option>VN</option>
@@ -40,10 +40,10 @@
 				<div id="non-account">
 					<span class="text-xl text-white">
 						Don't have an account? 
-						<a href="register-form-en.html" class="underline text-yellow-500 hover:text-yellow-300">
-							Create one!
-						</a>
 					</span>
+					<a href="register-form-en.html" class="text-xl underline text-yellow-500 hover:text-yellow-300">
+						Create one!
+					</a>
 				</div>
 				<div id="options" class="justify-between mt-12 mb-12">
 					<button onclick="window.location.href='home-en.html'" id="back" type="button" class="text-lg text-white font-bold border-white border-2 rounded-lg p-3 hover:text-black hover:bg-white">

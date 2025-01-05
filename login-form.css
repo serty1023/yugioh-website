@@ -35,3 +35,37 @@
 				justify-content: space-between;
 				align-items: center;
 			}
+@media (max-width: 699px)
+{
+	#language
+	{
+		top: 20px;
+		right: 20px;
+	}
+	#login-form
+	{
+		width: 90%;
+		#user-data
+		{
+			width: 90%;
+		}
+		#non-account
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#options
+		{
+			flex-direction: column-reverse;
+			gap: 20px;
+		}
+	}
+}
+@media (min-width: 700px) and (max-width: 1199px)
+{
+	#login-form
+	{
+		width: 75%;
+	}
+}
