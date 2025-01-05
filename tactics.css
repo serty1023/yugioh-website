@@ -325,13 +325,17 @@
         {
             scale: 0.5;
         }
+        a
+        {
+            font-size: 25px;
+        }
     }
     #page-number-content-2, #page-number-content-1
     {
         width: 80%;
         p
         {
-            font-size: 25px;
+            font-size: 20px;
         }
     }
     #blank
