@@ -329,6 +329,10 @@
     #page-number-content-2, #page-number-content-1
     {
         width: 80%;
+        p
+        {
+            font-size: 25;
+        }
     }
     #blank
     {
